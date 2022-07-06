@@ -61,7 +61,6 @@ void MainWindow::on_actionSaveAs_triggered() {
 
 void MainWindow::on_actionPrint_triggered() {
   QPrinter printer;
-  printer.setPrinterName("Printer name");
   QPrintDialog printerDialog(&printer, this);
   if (printerDialog.exec() == QDialog::Rejected) {
     QMessageBox::warning(this, "Warning", "Cannot access printer");
